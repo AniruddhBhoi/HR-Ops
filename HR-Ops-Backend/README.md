@@ -47,7 +47,7 @@ A modern, full-stack Employee Management System built with the MERN stack featur
 ### 1. Clone Repository
 ```bash
 git clone <your-repo-url>
-cd EMS
+cd HR-Ops-Backend
 ```
 
 ### 2. Install Dependencies
@@ -127,18 +127,27 @@ Password: [PASSWORD]
 
 ## Project Structure
 
-```
+```text
 EMS/
-├── client/                 # React Frontend
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── hooks/          # Custom hooks
-│   │   └── App.js         # Main app component
-│   └── package.json
-├── server/
-│   └── server.js          # Express server
-├── package.json           # Root dependencies
-└── README.md
+├── HR-Ops-Backend/                  # Node.js Express Backend
+│   ├── server/                      # Server source code
+│   │   ├── config/                  # Database configuration
+│   │   ├── controller/              # Request handlers
+│   │   ├── middleware/              # Express middlewares
+│   │   ├── model/                   # Mongoose schemas
+│   │   ├── routes/                  # API routes
+│   │   └── server.js                # Main entry point
+│   └── package.json                 # Backend dependencies
+├── HR-Ops-Frontend/                 # React Frontend (Vite)
+│   ├── public/                      # Static assets
+│   ├── src/                         # React source code
+│   │   ├── components/              # Reusable React components
+│   │   ├── context/                 # React contexts (Auth, Theme)
+│   │   ├── pages/                   # Application pages
+│   │   └── App.jsx                  # Main app component
+│   └── package.json                 # Frontend dependencies
+├── docker-compose.yml               # Docker orchestration
+└── README.md                        # Main project documentation
 ```
 
 ## 🔌 API Endpoints

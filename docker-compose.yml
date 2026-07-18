@@ -1,7 +1,7 @@
 services:
   backend:
     build: ./HR-Ops_Backend
-    container_name: ems-backend
+    container_name: hr-ops-backend
     env_file:
       - ./HR-Ops_Backend/.env
     ports:
@@ -10,7 +10,7 @@ services:
 
   nginx:
     build: ./HR-Ops_Frontend
-    container_name: ems-nginx
+    container_name: hr-ops-frontend
     ports:
       - "80:80"
     depends_on:
