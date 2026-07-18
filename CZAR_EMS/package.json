@@ -1,0 +1,31 @@
+{
+  "name": "czarcore-backend",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm start\" \"cd client && npm run dev\"",
+    "seed": "node server/seed.js",
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.12",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "validator": "^13.11.0",
+    "xlsx": "^0.18.5"
+  }
+}
