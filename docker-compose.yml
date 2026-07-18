@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./CZAR_EMS
+    container_name: ems-backend
+    env_file:
+      - ./CZAR_EMS/.env
+    ports:
+      - "5002:5002"
+    restart: always
+
+  nginx:
+    build: ./CZAR_EMS_FRONTEND
+    container_name: ems-nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
