@@ -8,7 +8,6 @@ A full-stack Employee Management System (EMS) designed to streamline HR operatio
 - **Node.js & Express.js**: REST API framework
 - **MongoDB & Mongoose**: Database and ODM
 - **JWT & Passport**: Authentication and authorization
-- **Nodemailer**: Email notifications
 - **Multer**: File and document uploads
 - **XLSX**: Excel file processing
 
