@@ -76,8 +76,8 @@ export default function LoginPage() {
       <div className={`min-h-screen flex items-center justify-center bg-gray-50 px-4 ${showForgotPassword ? 'blur-sm transition-all duration-300 pointer-events-none' : ''}`}>
         <div className="w-full max-w-md bg-white shadow-xl rounded-2xl p-8 border border-gray-100">
           <div className="text-center mb-6">
-            <img src="/czar_logo.svg" alt="Logo" className="mx-auto w-20 mb-2" />
-            <h1 className="text-2xl font-bold text-gray-800">Login</h1>
+            <img src="/image.png" alt="Logo" className="mx-auto w-20 mb-2" />
+            <h1 className="text-2xl font-bold text-gray-800">Welcome Back</h1>
             <p className="text-gray-500 text-sm mt-1">
               Enter your credentials to access your account
             </p>

@@ -8,7 +8,7 @@
 //   if (!token) return res.status(401).json({ message: 'No token provided' });
 
 //   try {
-//     req.user = jwt.verify(token, process.env.JWT_SECRET || 'czarcore_secret_key');
+//     req.user = jwt.verify(token, process.env.JWT_SECRET || '[secret_key]');
 //     next();
 //   } catch {
 //     res.status(401).json({ message: 'Invalid or expired token' });
@@ -59,7 +59,7 @@ const verifyToken = (req, res, next) => {
   if (!token) return res.status(401).json({ message: 'No token provided' });
 
   try {
-    req.user = jwt.verify(token, 'czarcore_secret_key');
+    req.user = jwt.verify(token, '[secret_key]');
     next();
   } catch {
     res.status(401).json({ message: 'Invalid or expired token' });

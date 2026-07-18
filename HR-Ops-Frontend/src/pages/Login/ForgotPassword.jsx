@@ -309,7 +309,7 @@ export default function ForgotPasswordPage({ onClose, onBack, backLabel = "Back 
           </button>
         )}
         <div className="text-center mb-6">
-          <img src="/czar_logo.svg" alt="Logo" className="mx-auto w-20 mb-2" />
+          <img src="/image.png" alt="Logo" className="mx-auto w-20 mb-2" />
           <h1 className="text-2xl font-bold text-gray-800">Forgot Password</h1>
           <p className="text-gray-500 text-sm mt-1">
             {step === 1 && "Enter your email to receive OTP"}

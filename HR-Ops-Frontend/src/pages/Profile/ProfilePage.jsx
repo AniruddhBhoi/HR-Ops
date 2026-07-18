@@ -44,7 +44,7 @@ const ProfilePage = () => {
   const [selectedYear, setSelectedYear] = useState('all');
   const [isViewingSalarySlips, setIsViewingSalarySlips] = useState(false);
   const [isViewingDocuments, setIsViewingDocuments] = useState(false);
-  const [optValue,setOtpValue] = useState('');
+  const [optValue, setOtpValue] = useState('');
 
 
 
@@ -433,7 +433,7 @@ const ProfilePage = () => {
               </button>
 
               <div className="text-center mb-6">
-                <img src="/czar_logo.svg" alt="Logo" className="mx-auto w-16 mb-4" />
+                <img src="/image.png" alt="Logo" className="mx-auto w-16 mb-4" />
                 <h3 className="text-2xl font-bold text-gray-800">
                   Change Password
                 </h3>

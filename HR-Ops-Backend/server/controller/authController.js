@@ -75,7 +75,7 @@ exports.register = async (req, res) => {
 
     const token = jwt.sign(
       { userId: user._id, email, role },
-      process.env.JWT_SECRET || "czarcore_secret_key",
+      process.env.JWT_SECRET || "[secret_key]",
       { expiresIn: "7d" }
     );
 
@@ -106,7 +106,7 @@ exports.login = async (req, res) => {
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
-    const token = jwt.sign({ userId: user._id, email, role: user.role }, process.env.JWT_SECRET || 'czarcore_secret_key', { expiresIn: '7d' });
+    const token = jwt.sign({ userId: user._id, email, role: user.role }, process.env.JWT_SECRET || '[secret_key]', { expiresIn: '7d' });
 
     res.json({ message: 'Login successful', token, user });
   } catch {
@@ -146,7 +146,7 @@ exports.adminLogin = async (req, res) => {
 
     const token = jwt.sign(
       { userId: admin.userId, email: admin.email, role: "admin" },
-      process.env.JWT_SECRET || "czarcore_secret_key",
+      process.env.JWT_SECRET || "[secret_key]",
       { expiresIn: "24h" }
     );
 

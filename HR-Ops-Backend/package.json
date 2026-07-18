@@ -1,5 +1,5 @@
 {
-  "name": "czarcore-backend",
+  "name": "HR-Ops-Backend",
   "version": "1.0.0",
   "main": "server/server.js",
   "type": "commonjs",

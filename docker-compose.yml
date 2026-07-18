@@ -1,15 +1,15 @@
 services:
   backend:
-    build: ./CZAR_EMS
+    build: ./HR-Ops_Backend
     container_name: ems-backend
     env_file:
-      - ./CZAR_EMS/.env
+      - ./HR-Ops_Backend/.env
     ports:
       - "5002:5002"
     restart: always
 
   nginx:
-    build: ./CZAR_EMS_FRONTEND
+    build: ./HR-Ops_Frontend
     container_name: ems-nginx
     ports:
       - "80:80"

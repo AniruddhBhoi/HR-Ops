@@ -1,4 +1,4 @@
-# CzarCore - Employee Management System
+# Core - Employee Management System
 
 A modern, full-stack Employee Management System built with the MERN stack featuring role-based authentication, leave management, payroll processing, and analytics dashboard.
 
@@ -64,7 +64,7 @@ cd ..
 ### 3. Environment Setup
 Create a `.env` file in the root directory:
 ```env
-MONGODB_URI=mongodb://localhost:27017/CzarCore
+MONGODB_URI=mongodb://localhost:27017/HR-Ops
 JWT_SECRET=your_jwt_secret_key
 PORT=5002
 EMAIL_USER=your_email@gmail.com
@@ -121,8 +121,8 @@ If you encounter MongoDB connection timeouts:
 ## 👤 Default Admin Account
 
 ```
-Email: admin@czarcore.com
-Password: admin123
+Email: admin@[EMAIL_ADDRESS]
+Password: [PASSWORD]
 ```
 
 ## Project Structure

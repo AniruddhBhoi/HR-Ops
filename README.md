@@ -1,10 +1,10 @@
-# CZAR Employee Management System (EMS)
+# HR Operation System (EMS)
 
 A full-stack Employee Management System (EMS) designed to streamline HR operations, employee tracking, attendance, and leave management.
 
 ## 🚀 Technologies Used
 
-### Backend (`CZAR_EMS`)
+### Backend (`HR-Ops_Backend`)
 - **Node.js & Express.js**: REST API framework
 - **MongoDB & Mongoose**: Database and ODM
 - **JWT & Passport**: Authentication and authorization
@@ -12,7 +12,7 @@ A full-stack Employee Management System (EMS) designed to streamline HR operatio
 - **Multer**: File and document uploads
 - **XLSX**: Excel file processing
 
-### Frontend (`CZAR_EMS_FRONTEND`)
+### Frontend (`HR-Ops_Frontend`)
 - **React 19 & Vite**: Fast, modern frontend framework
 - **Tailwind CSS**: Utility-first styling
 - **React Router DOM**: Client-side routing
@@ -28,8 +28,8 @@ A full-stack Employee Management System (EMS) designed to streamline HR operatio
 
 ## 📂 Project Structure
 
-- `/CZAR_EMS` - Backend Node.js API server
-- `/CZAR_EMS_FRONTEND` - Frontend React application
+- `/HR-Ops_Backend` - Backend Node.js API server
+- `/HR-Ops_Frontend` - Frontend React application
 - `docker-compose.yml` - Configuration for running the entire stack via Docker
 
 ---
@@ -44,7 +44,7 @@ A full-stack Employee Management System (EMS) designed to streamline HR operatio
 ### Running with Docker (Recommended)
 
 1. Ensure Docker is running on your machine.
-2. Configure your environment variables in `CZAR_EMS/.env`.
+2. Configure your environment variables in `HR-Ops_Backend/.env`.
 3. Build and start the containers:
    ```bash
    docker-compose up --build
@@ -55,7 +55,7 @@ A full-stack Employee Management System (EMS) designed to streamline HR operatio
 
 #### 1. Setup Backend
 ```bash
-cd CZAR_EMS
+cd HR-Ops_Backend
 npm install
 
 # Make sure your .env file is configured, then start the server:
@@ -67,7 +67,7 @@ The backend API will run on `http://localhost:5002` (or the port specified in `.
 
 #### 2. Setup Frontend
 ```bash
-cd CZAR_EMS_FRONTEND
+cd HR-Ops_Frontend
 npm install
 
 # Start the Vite development server
@@ -79,7 +79,7 @@ The frontend application will be available at `http://localhost:5173`.
 
 ## ⚙️ Environment Variables
 
-Create a `.env` file in the `CZAR_EMS` directory with the following variables:
+Create a `.env` file in the `HR-Ops_Backend` directory with the following variables:
 
 ```env
 PORT=5002
